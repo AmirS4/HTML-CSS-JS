@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="first">this can be chnaged</p><br>
+    <script>
+        function f(){
+            document.getElementById("first").style.fontSize = "25px";
+            document.getElementById("first").style.color = "blue";
+            document.getElementById("first").style.backgroundColor = "yellow";
+            document.getElementById("first").style.display = "inline";
+            document.getElementById("first").style.marginLeft = "500px";
+            document.getElementById("first").innerHTML = "it changed";
+        }
+    </script>
+    <button type="button" onclick="f()">change it</button><hr>
+    <div id="images">
+        <img id="pics1" src="./img/1.jpg" alt="" height="150px">
+    </div>
+    <div id="button">
+        <button type="button" onclick="n(1)">itachi</button>
+        <button type="button" onclick="n(2)">kakashi</button>
+    </div>
+    <script>
+        function n(a) {
+            var img;
+            if (a == 1) {
+                img = "./img/1.jpg"
+            } else{
+                img = "./img/2.jpg"
+            }
+            document.getElementById("pics1").src = img;
+        }
+    </script><hr>
+    <div id="date">
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">click to see time</button>
+        <p id="demo"></p>
+    </div><hr>
+    <button id="demo2" type="button" onclick="a2()">what is 267 * 483</button>
+    <script>
+        function a2(){
+            document.getElementById('demo2').style.display = "none";
+            document.getElementById('demo3').style.display = 'block';
+        }
+    </script>
+    <p id="demo3"></p>
+    <script>
+        let a, b, c;
+        a = 267; b = 483; c = a * b;
+        document.getElementById("demo3").innerHTML = c;
+        document.getElementById("demo3").style.display = 'none'
+    </script>
+  
+    
+</body>
+</html>
