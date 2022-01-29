@@ -1,0 +1,163 @@
+body{
+    background-image: url('./Images/Background/1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+    /*box-sizing: border-box;
+    margin-top: 0px;*/
+}    
+#wrapper{
+    display: flex;
+    border-radius: 13px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.navbar{
+    width: 380px;
+    display: flex;
+    border-radius: 13px;
+    padding-left: 1em;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(1, 26, 247);
+    height: 100px;
+}
+.navbar a {
+    display: flex;
+    text-decoration: none;
+    font-size: 27px;
+    border-radius: 10px;
+    color: white;
+    background-color:rgb(70, 70, 139);
+    height: 50px;
+    align-items: center;
+}
+.navbar a :hover{
+    color: red;
+    background-color: royalblue;
+}
+#home h1{
+    text-align: center;
+    font-size: 65px;
+    color: rgb(18, 31, 6);
+}
+.speach{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    height: 100px;
+    font-size: 20px;
+}
+/* .speach h1{
+    align-items: center;
+    color:rgb(255, 102, 0);
+    background-color: rgb(78, 66, 247);
+    height: 200px;
+    font-size: 50px;
+    display: flex
+} */
+#pro{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    
+}
+.img1 {
+    width: 250px;
+}
+@media (max-width:800px) {
+    #pro{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#about{
+    display: flex;
+    margin-top: 100px;
+}
+.vid{
+    width: 600px;
+    padding-left: 44px
+}
+#about h1{
+    background-color: rgb(129, 129, 212);
+    color: white;
+    border: 5px solid orange;
+}
+@media (max-width:1000px) {
+    #about{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .vid{
+        padding-right: 44px;
+        width: 450px;
+    }
+    h1{
+        width: 450px;
+    }
+}
+#form{
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 1000px;
+}
+select, option, input, label, button{
+    padding: 0.2rem 1rem;
+    font-size: 1.2rem;
+    color: inherit;
+}    
+.box{
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.box label{
+    display: none;
+    color: rgb(199, 199, 199);
+}
+.box input, .box select, .box textarea{
+    flex-basis: 100%;
+}
+@media all and (min-width:500px) {
+    .box label{
+        display: block;
+    }
+}
+@media all and (min-width:600px) {
+    .box{
+        flex-direction: row;
+    }
+    .box label{
+        width: 9rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .box input, .box select, .box textarea{
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .box button{
+        margin-left: 11rem;
+    }   
+}
+
+
+
+
+
+
