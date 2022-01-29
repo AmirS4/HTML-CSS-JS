@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+    margin-top: 0px;
+}
+#navbar{
+  background-color: gold;
+  overflow: hidden;
+}
+#navbar a{
+  float: left;
+  color: azure;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-size: 20px;
+}
+#navbar a:hover{
+  background-color: rgb(4, 139, 139);
+  color: blue;
+  
+}
+h1{
+    color: rgb(47, 0, 255);
+    text-align: center;
+    font-size: 70px;  
+}
+p{
+    background-color: gray;
+    border-radius: 6%;
+    text-align: center;
+    border: 3px solid gold;
+    margin-top: 200px;
+    font-size: 30px;
+}
+#home{
+    background-image: url('./images/Background/back1.jpg');
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#middle{
+    background-image: url('./images/Background/back2.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#detail h2{
+  background-color: blueviolet;
+  color: white;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 44px;
+  text-align: center;
+  
+}
+#first{
+    width: 30%;
+    float: right;
+    border: 2px solid red;
+    height: 600%;
+    position: relative;
+}
+#second{
+    width: 30%;
+    float: left;
+    border: 2px solid red;
+    position: relative;
+ 
+}
+#third{
+    width: 30%;
+    float: left;
+    border: 2px solid red;
+    margin-left: 60px;
+    position: relative;
+    
+    
+}
+img {
+    width: 40%;
+    margin-left: 100px;
+    margin-right: auto;
+    
+}
+#images p{
+    background-color: green;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    display: block;
+    font-size: 20px;
+}
+h2{
+    color: ivory;
+    margin-left: 25px;
+}
+#overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+#first:hover #overlay1 {
+  opacity: 1;
+}
+
+#text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  #second:hover #overlay2 {
+    opacity: 1;
+  }
+  
+  #text2{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  #third:hover #overlay3 {
+    opacity: 1;
+  }
+  
+  #text3{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+#clearfix{
+    clear: both;
+}
+#pics{
+  background-image: url('./images/Background/back3.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+}
+#images2 img{
+  vertical-align: middle;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  
+}
+#images2{
+  text-align: center;
+  background-color: yellow;
+}
+#form1{
+  background-image: url('./images/Background/back4.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+input[type=text] ,select, textarea{
+  width: 100%;
+  color: rgb(231, 18, 18);
+  padding: 12px;
+  border: 1px solid rgb(15, 4, 4);
+  border-radius: 4px;
+  resize: vertical;
+  background-color: rgb(168, 255, 157);
+}
+textarea{
+  margin-top: 10px;
+}
+label{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  background-color: yellow;
+  border-radius: 14px;
+}
+input[type=submit]{
+  background-color: #04AA6D;
+  color: rgb(174, 226, 33);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type=hover]{
+  background-color: #20229c;
+}
+#form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+#col1{
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+#col2{
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+#row::after{
+  content:'';
+  display: table;
+  clear: both;
+}
+@media screen and (max-width:600px){
+  #col1, #col2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  #first, #second, #third{
+    float: none;
+  }
+  #third{
+    margin-left: 0px;
+  }
+  #images p{
+    font-size: 20px;
+    color: white;
+    width: 25%;
+    margin-left: 15px;
+    padding-right: 50px;
+  }
+  #images img{
+    margin-left: 50px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
